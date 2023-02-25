@@ -187,6 +187,7 @@ class OktaSdkBridge: RCTEventEmitter {
             let result = [
                 OktaSdkConstant.RESOLVE_TYPE_KEY: OktaSdkConstant.AUTHORIZED,
                 OktaSdkConstant.ACCESS_TOKEN_KEY: stateManager?.accessToken
+                OktaSdkConstant.REFRESH_TOKEN_KEY: stateManager?.refreshToken
             ]
             
             self.sendEvent(withName: OktaSdkConstant.SIGN_IN_SUCCESS, body: result)
