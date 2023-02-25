@@ -263,7 +263,7 @@ class OktaSdkBridge: RCTEventEmitter {
                 OktaSdkConstant.RESOLVE_TYPE_KEY: OktaSdkConstant.SIGNED_OUT
             ]
             
-            stateManager.clear()
+           // stateManager.clear()
             
             self.sendEvent(withName: OktaSdkConstant.SIGN_OUT_SUCCESS, body: result)
             promiseResolver(result)
